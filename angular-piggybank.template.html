@@ -1,0 +1,14 @@
+<div class="ma-piggybank" layout="column">
+    <div class="name">{{ ctrl.box.owner }}</div>
+    <div class="photo">
+        <img class="photo" src="{{ ctrl.imageData }}">
+    </div>
+    <div layout="row">
+        <div class="amount" flex>{{ ctrl.box.amount }}</div>
+        <div class="good" flex>{{ ctrl.box.type }}</div>
+    </div>
+    <div layout="row" ng-show="ctrl.rw">
+        <div class="decrease" flex ng-click="ctrl.dec()">dec</div>
+        <div class="increase" flex ng-click="ctrl.inc()">inc</div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+{
+  "name": "angular-piggybank",
+  "version": "0.0.0",
+  "homepage": "https://github.com/maduma/angular-piggybank",
+  "authors": [
+    "Maduma <maduma@pt.lu>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~0.9.6"
+  }
+}
