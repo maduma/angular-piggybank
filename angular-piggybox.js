@@ -10,7 +10,7 @@ function piggybank() {
 
     var directive = {
         restrict: 'E',
-        templateUrl: 'angular-piggybank.template.html',
+        templateUrl: 'angular-piggybox.template.html',
         scope: {},
         bindToController: {
             rw: "=",
