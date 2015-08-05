@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body ng-controller="ctrl as main">
 
-    <div layout="column" ng-controller="ctrl as main">
-        <div class="ma-header"></div>
+    <div>
+        <h2>Piggy Box</h2>
         <ma-piggybox rw="main.isAuthenticated" box="main.boxes[0]"></ma-piggybox>
-        <hr>
+        <h2>Piggy Bank</h2>
         <ma-piggybank rw="main.isAuthenticated" boxes="main.boxes"></ma-piggybank>
+        <h2>Authentification</h3>
         <div style="text-align: center;">
             <input type="checkbox" ng-model="main.isAuthenticated">
             isAuthenticated: {{ main.isAuthenticated }}
