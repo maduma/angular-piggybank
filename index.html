@@ -12,9 +12,9 @@
 
     <div layout="column" ng-controller="ctrl as main">
         <div class="ma-header"></div>
-        <div class="ma-content" layout="row" layout-sm="column" layout-align="center center">
-            <ma-piggybank rw="main.isAuthenticated" box="box" ng-repeat="box in main.boxes"></ma-piggybank>
-        </div>
+        <ma-piggybox rw="main.isAuthenticated" box="main.boxes[0]"></ma-piggybox>
+        <hr>
+        <ma-piggybank rw="main.isAuthenticated" boxes="main.boxes"></ma-piggybank>
         <div style="text-align: center;">
             <input type="checkbox" ng-model="main.isAuthenticated">
             isAuthenticated: {{ main.isAuthenticated }}
@@ -25,8 +25,6 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
-    <script src="bower_components/progressbar.js/dist/progressbar.js"></script>
-    <script src="bower_components/ng-droplet/dist/ng-droplet.min.js"></script>
     <script src="angular-piggybank.js"></script>
     <script src="angular-piggybox.js"></script>
     <script src="main.js"></script>

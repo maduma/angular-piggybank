@@ -3,7 +3,7 @@
 'use strict';
 
 angular
-    .module('main', ['maPiggybank'])
+    .module('main', ['maPiggybox', 'maPiggybank'])
     .controller('ctrl', ctrl); 
     
 function ctrl() {

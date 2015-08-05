@@ -3,10 +3,10 @@
 'use strict';
 
 angular
-    .module('maPiggybank', ['ngMaterial'])
-    .directive('maPiggybank', piggybank);
+    .module('maPiggybox', ['ngMaterial'])
+    .directive('maPiggybox', piggybox);
     
-function piggybank() {
+function piggybox() {
 
     var directive = {
         restrict: 'E',
