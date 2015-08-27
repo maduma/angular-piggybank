@@ -15,5 +15,10 @@
   ],
   "dependencies": {
     "angular-material": "~0.9.6"
-  }
+  },
+  "main": [
+    "angular-piggybank.js",
+    "angular-piggybox.js",
+    "angular-piggybox.css"
+  ]
 }
